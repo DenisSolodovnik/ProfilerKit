@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "ProfileKit",
+    name: "ProfilerKit",
     platforms: [
         .iOS(.v15)
     ],
     products: [
-        .library(name: "ProfileKit", targets: ["ProfileKit"])
+        .library(name: "ProfilerKit", targets: ["ProfilerKit"])
     ],
     targets: [
         .target(
-            name: "ProfileKit",
+            name: "ProfilerKit",
             dependencies: [],
             swiftSettings: [
                 .define("PROFILERKIT_ENABLED", .when(configuration: .debug))
